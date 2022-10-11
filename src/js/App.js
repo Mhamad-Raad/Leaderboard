@@ -1,2 +1,2 @@
 import '../style.css';
-import Person from './person.js';
+import './person.js';
