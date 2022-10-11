@@ -158,7 +158,7 @@
 /******/ 			return __webpack_require__.O(result);
 /******/ 		}
 /******/ 		
-/******/ 		var chunkLoadingGlobal = self["webpackChunkweb_template"] = self["webpackChunkweb_template"] || [];
+/******/ 		var chunkLoadingGlobal = self["webpackChunkleaderboard"] = self["webpackChunkleaderboard"] || [];
 /******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
 /******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
 /******/ 	})();
