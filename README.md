@@ -1,10 +1,13 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Headline
-description
+# Leaderboard
+this is a web application where you input data, and it will store it in a database, on refresh shows the data in the database sorted from big to small. 
 
 ## Built With
-Technologies
+- HTML
+- CSS
+- JavaScript
+- Webpack
 
 # Live Demo
 [Demo](Link)
