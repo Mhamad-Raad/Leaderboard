@@ -3,5 +3,4 @@ export default class Person {
     this.name = name;
     this.score = score;
   }
-    
 }
