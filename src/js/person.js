@@ -1,6 +1,5 @@
 export default class Person {
-  constructor(name, score) {
-    this.name = name;
-    this.score = score;
+  constructor(arr) {
+    this.players = arr.result;
   }
 }
