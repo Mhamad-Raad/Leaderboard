@@ -1,6 +1,7 @@
 import '../style.css';
 import Person from './person.js';
 import API from './api.js';
+
 const lodash = require('lodash');
 
 const leader = document.querySelector('.leaders');

@@ -15,11 +15,12 @@ class API {
       redirect: 'follow',
       referrerPolicy: 'no-referrer',
     })
-    .then((response) => response.json())
-    .catch((error) => error);
+      .then((response) => response.json())
+      .catch((error) => error);
     return result;
   }
-  addData = async (name, score) => {  
+
+  addData = async (name, score) => {
     const result = await fetch(this.url, {
       method: 'POST',
       mode: 'cors',
@@ -32,8 +33,8 @@ class API {
       referrerPolicy: 'no-referrer',
       body: JSON.stringify({ user: name, score: score }),
     })
-    .then((response) => response.json())
-    .catch((error) => error);
+      .then((response) => response.json())
+      .catch((error) => error);
     return result;
   }
 }
