@@ -4,23 +4,31 @@ h1 {
   color: purple;
 }
 
+.bolder {
+  font-weight: bolder;
+}
+
 .page-title {
+  background: linear-gradient(100deg, rgba(37, 153, 179, 0.8) 0%, rgb(197, 53, 108) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   width: fit-content;
   font-size: 50px;
   letter-spacing: 5px;
   margin: 10px 0;
-  font-weight: bolder;
 }
 
 .leaderboards {
   width: 40%;
   height: 500px;
-  background-color: rebeccapurple;
+  border: 2.5px solid rgba(37, 153, 179, 0.8);
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5px 7px;
+  padding: 20px 30px;
   box-sizing: border-box;
+  position: relative;
 }
 
 .leaderboards-header {
@@ -33,15 +41,25 @@ h1 {
 
 .refresh-button {
   background-color: transparent;
+  font-size: 16px;
   height: 40px;
   padding: 0 20px;
   margin-top: 10px;
+  border: 2.5px solid rgb(197, 53, 108);
+  color: rgb(152, 5, 61);
+  border-radius: 10px;
+  transition: background-color, color 0.2s ease-in-out;
+}
+
+.refresh-button:hover {
+  background-color: rgb(197, 53, 108);
+  color: white;
 }
 
 .leaderboards-title {
   font-size: 30px;
-  font-weight: bolder;
   margin: 0;
+  color: rgb(152, 5, 61);
 }
 
 .leaders {
@@ -51,17 +69,17 @@ h1 {
   flex-direction: column;
   align-items: center;
   overflow-y: scroll;
+  position: relative;
+  scrollbar-color: rebeccapurple green;
 }
 
 .leader-row {
   display: flex;
+  justify-content: space-around;
   width: 100%;
 }
 
 .score-form {
-  width: 40%;
-  height: 500px;
-  background-color: rebeccapurple;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -69,7 +87,43 @@ h1 {
   box-sizing: border-box;
 }
 
+.form-title {
+  color: rgb(152, 5, 61);
+}
+
 .submit {
+  color: rgba(37, 153, 179, 0.8);
+  font-size: 18px;
   margin-left: auto;
   margin-top: 20px;
+  border: 2.5px solid rgba(37, 153, 179, 0.8);
+  border-radius: 5px;
+  padding: 10px 15px;
+  background-color: transparent;
+  transition: background-color, color 0.2s ease-in-out;
+}
+
+.submit:hover {
+  background-color: rgba(37, 153, 179, 0.8);
+  color: white;
+}
+
+.leader-name {
+  margin: 5px;
+}
+
+.leader-score {
+  margin: 2px;
+}
+
+.leader-header {
+  border: 0;
+  font-size: 20px;
+  color: rgb(197, 53, 108);
+  margin: 7px;
+}
+
+.one {
+  background-color: rgb(47, 106, 122);
+  color: white;
 }
