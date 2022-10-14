@@ -25,10 +25,10 @@ const render = async () => {
     }
     leader.innerHTML += `
     <div class="leader-row ${st}">
-    <p class="leader-name">${person.user}</p>
-    <p class="leader-score">${person.score}</p>
+    <p class="leader-name bolder">${person.user}</p>
+    <p class="leader-score bolder">${person.score}</p>
     </div>`;
-    i++;
+    i += 1;
   });
 };
 

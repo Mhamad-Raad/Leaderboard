@@ -4,6 +4,10 @@ h1 {
   color: purple;
 }
 
+.bolder {
+  font-weight: bolder;
+}
+
 .page-title {
   background: linear-gradient(100deg, rgba(37, 153, 179, 0.8) 0%, rgb(197, 53, 108) 100%);
   -webkit-background-clip: text;
@@ -12,7 +16,6 @@ h1 {
   font-size: 50px;
   letter-spacing: 5px;
   margin: 10px 0;
-  font-weight: bolder;
 }
 
 .leaderboards {
@@ -38,7 +41,6 @@ h1 {
 
 .refresh-button {
   background-color: transparent;
-  font-weight: bolder;
   font-size: 16px;
   height: 40px;
   padding: 0 20px;
@@ -56,7 +58,6 @@ h1 {
 
 .leaderboards-title {
   font-size: 30px;
-  font-weight: bolder;
   margin: 0;
   color: rgb(152, 5, 61);
 }
@@ -92,7 +93,6 @@ h1 {
 
 .submit {
   color: rgba(37, 153, 179, 0.8);
-  font-weight: bolder;
   font-size: 18px;
   margin-left: auto;
   margin-top: 20px;
@@ -109,18 +109,15 @@ h1 {
 }
 
 .leader-name {
-  font-weight: bolder;
   margin: 5px;
 }
 
 .leader-score {
-  font-weight: bolder;
   margin: 2px;
 }
 
 .leader-header {
   border: 0;
-  font-weight: bolder;
   font-size: 20px;
   color: rgb(197, 53, 108);
   margin: 7px;
