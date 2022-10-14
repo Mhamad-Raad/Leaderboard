@@ -10,16 +10,25 @@ const submitBtn = document.querySelector('.submit');
 const api = new API();
 
 const render = async () => {
+  let i = 0;
+  let st = '';
   leader.innerHTML = '';
   const response = await api.getData();
   const persons = new Person(response);
   persons.players = lodash.sortBy(persons.players, ['score']).reverse();
   persons.players.forEach((person) => {
+    person.user = person.user.charAt(0).toUpperCase() + person.user.slice(1);
+    if (i % 2 === 0) {
+      st = 'one';
+    } else {
+      st = '';
+    }
     leader.innerHTML += `
-    <div class="leader-row">
-    <p class="leader-name">${person.user}: </p>
+    <div class="leader-row ${st}">
+    <p class="leader-name">${person.user}</p>
     <p class="leader-score">${person.score}</p>
     </div>`;
+    i++;
   });
 };
 

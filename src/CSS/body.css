@@ -4,6 +4,8 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
+  background-color: #fdecd5;
+  cursor: default;
 }
 
 main {
@@ -13,7 +15,46 @@ main {
 }
 
 input {
-  width: 90%;
-  height: 25px;
+  width: 450px;
+  height: 30px;
+  border: none;
+  padding: 5px;
+  border-radius: 4px;
   margin-bottom: 15px;
+}
+
+input::placeholder {
+  color: rgb(240, 42, 141);
+  opacity: 0.5;
+}
+
+html button {
+  cursor: pointer;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid rgba(37, 153, 179, 0.8);
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  cursor: pointer !important;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(72, 124, 135);
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(153, 0, 77);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #c80965;
 }
