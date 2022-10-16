@@ -79,6 +79,10 @@ h1 {
   width: 100%;
 }
 
+.mrg-btn {
+  margin-bottom: 5px;
+}
+
 .score-form {
   display: flex;
   flex-direction: column;
@@ -126,4 +130,24 @@ h1 {
 .one {
   background-color: rgb(47, 106, 122);
   color: white;
+}
+
+.two {
+  background-color: rgb(70, 151, 148);
+  color: white;
+}
+
+.first {
+  background-color: rgb(246, 255, 0);
+  color: rgb(0, 0, 0);
+}
+
+.second {
+  background-color: rgb(151, 151, 151);
+  color: rgb(0, 0, 0);
+}
+
+.third {
+  background-color: rgb(190, 111, 31);
+  color: rgb(0, 0, 0);
 }
