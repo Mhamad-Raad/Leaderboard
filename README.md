@@ -10,7 +10,7 @@ this is a web application where you input data, and it will store it in a databa
 - Webpack
 
 # Live Demo
-[Demo](Link)
+[Demo](https://mhamad-raad.github.io/Leaderboard/)
 
 ## Getting Started
 To get a local copy up and running follow these simple example steps.
