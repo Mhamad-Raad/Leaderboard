@@ -18,7 +18,7 @@ const render = async () => {
   persons.players = lodash.sortBy(persons.players, ['score']).reverse();
   persons.players.forEach((person) => {
     person.user = person.user.charAt(0).toUpperCase() + person.user.slice(1);
-    let position =  i === 0 ? 'first' : i === 1 ? 'second' : i === 2 ? 'third' : '';
+    const position = i === 0 ? 'first' : i === 1 ? 'second' : i === 2 ? 'third' : '';
     if (i % 2 === 1) {
       st = 'one';
     } else {
